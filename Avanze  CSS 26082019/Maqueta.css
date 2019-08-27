@@ -1,0 +1,48 @@
+#Titulo{
+	text-align: :center;
+	color: yellow;
+	animation-delay: unset;
+}
+#contenedor {
+	width: 900px;
+	margin: 0 auto;
+}
+#arriba {
+	width: 800px;
+	height: 100px;
+	background: #ff0000;
+}
+#cuerpo {
+	width: 800px;
+	height: 400px;
+	background: #00ff00;
+}
+#datos{
+	width: 200px;
+	height: 400px;
+	background: #ffccff;
+	float: left;
+}
+ul.menu {
+	clear: both;
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #7c7c7c;
+}
+ul.menu li a:link, ul.menu li a:visited {
+	padding: .3em;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	background: #f4f4f4;
+	border-top: 1px solid #7c7c7c;
+	border-right: 1px solid #7c7c7c;
+	border-bottom: 1px solid #9c9c9c; 
+}
+ul.menu li {
+display: inline;
+float: left;
+}
