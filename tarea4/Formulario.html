@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="Estilos.css">
+</head>
+<body bgcolor="yellow">
+	<a href="index.html"> <img src="atras.jpg" width="100" height="100"> </a>
+	<div id="contenedor">
+		<div id="arriba">
+			<i></i>
+		</div>
+		<div id="cuerpo">
+			<div id="datos">
+				<br>
+				<br>
+				<i>
+					Buscanos:
+				</i>
+				<br>
+				<br>
+				<br>
+				<br>
+				<i>Contactos:</i>
+				<table border="3" align="center" cellspacing="5" align="center">
+					<tr>
+					<td>
+					<a href=""> <img src="Whattsaap.jpg" width="80" height="80"> </a>
+					</td>
+					<td>
+					<a href=""> <img src="Faceboock.jpg" width="80" height="80"> </a>
+					</td>
+					</tr>
+					</table>
+			</div>
+			<form>
+				<label for="nombre">Ingrese su Nombre:</label>
+				<input type="text" placeholder="Escriba su Nombre" maxlength="25" name="nombre"> <br>
+				<label for="correro">Ingrese su Correo Electronico</label> <input type="email" id="Correo" placeholder="Escriba su Correro Electronico" name="correro"> 
+				<button onclick="alert(document.getElementById('Correo').value)">Buscar</button>
+				<br>
+				<br>
+				<select name="">
+					<option value="Mujer">Mujer </option>
+					<option value="Hombre">Hombre</option>
+				</select>
+				<br>
+				<label for="Descripcion">Ingrese su Descripcion:</label>
+				<input type="text" placeholder="Descripcion" maxlength="100" size="50">
+				<br>
+				<input type="submit" name=""> <br>
+			</form>
+		</div>
+	</div>
+		
+</body>
+</html>
