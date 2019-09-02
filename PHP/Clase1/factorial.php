@@ -5,18 +5,12 @@
 	<title>Factorial</title>
 </head>
 <body>
-	--uso de Programacion en el servidor
 
-	--Cliente ----------> Servidor
-	--    ^____________________|
-	<?<php
+	<?php
 		$n = 5;
 		$r = 1;
-		for ($i=1; $i <= $n ; $i--) { 
-			# code...
-			$r = $r * $i;
-		}
-		echo $r;
-	?>
+		for ($i=1; $i<=$n ; $i--) { 
+			$r = $r * $i; ?>
+		<?php echo $r }?>
 </body>
 </html>
