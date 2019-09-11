@@ -19,6 +19,6 @@
     echo "<h3>El Numero <span class='white'>$numero</span>No es entero positivo</h3>";
 ?>
 <hr>
-<a class="button" href="Tarea-5.php">VOLVER</a>
+<a class="button" href="index.html">VOLVER</a>
 </body>
 </html>
