@@ -13,6 +13,6 @@
 		echo "<h3>El area del triangulo Es:<span class='white'>$a m2</span></h3>";
 	 ?>
 	 <hr>
-	 <a class="button" href="Tarea-5.php">VOLVER</a>
+	 <a class="button" href="index.html">VOLVER</a>
 </body>
 </html>
