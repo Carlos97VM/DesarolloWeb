@@ -1,0 +1,15 @@
+.rojo{
+    background: red;
+    height: 50px;
+    width: 200px;
+}
+.amarillo{
+    background: yellow;
+        height: 50px;
+        width: 200px;
+}
+.verde{
+	background: green;
+	height: 50px;
+	width: 200px;
+}
