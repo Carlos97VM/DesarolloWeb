@@ -1,0 +1,26 @@
+body{
+	background: #ccc;
+	margin: 0 auto;
+}
+#contenedor{
+	width: 900px;
+	margin: auto;
+	margin-top: 60px;
+	border: 1px solid black;
+}
+#izquierda{
+	width: 116px;
+	height: 400px;
+	border: 1px solid black;
+	float: left;
+	background: #494949;
+}
+#derecha{
+	width: 780px;
+	height: 400px;
+	border: 1px solid black;
+	float: left;
+	border-left: 1px solid white;
+	background: #fff;
+	background-color: #F1EFED;
+}
