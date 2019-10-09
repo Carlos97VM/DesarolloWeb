@@ -5,7 +5,7 @@
   <title>INSERTAR</title>
 </head>
 
-<body>
+<body bgcolor="Orange">
 <form id="form1" name="form1" method="post" action="insertar.php">
   <p>&nbsp;</p>
   <p>

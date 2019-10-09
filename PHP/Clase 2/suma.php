@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sumar</title>
-</head>
-<body>
-	<?php 
-		$s = $_POST['Datos'];
-	 ?>
-</body>
-</html>
+<?php 
+	$s = $_POST['txtn'];
+	$suma = 0;
+	for($i = 0 ; $i < $s ; $i++){
+		$suma+=$_POST['s'.$i];
+	}
+	echo "La SUMA ES: ".$suma;
+?>

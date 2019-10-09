@@ -5,7 +5,7 @@
   <title>INSERTAR</title>
 </head>
 
-<body>
+<body bgcolor="Orange">
 <form id="form1" name="form1" method="post" action="mostrarfila.php">
   <br>
   <center><h1>Mostrar Libro de La Fila</h1></center>

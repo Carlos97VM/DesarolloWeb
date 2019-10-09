@@ -1,13 +1,19 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="Orange">
+	<?php
   include('estante.php');
   session_start();
-if (!isset($_SESSION['p']))
-  {
-     echo "No se ha insertado ningun elemento";
-  }
-  else
+if ($_SESSION['e']!=null)
   {
   	$_SESSION['e']->eliminar($_POST['txtFila']);
+  	echo "Eliminado";
   }
 ?>
-<meta http-equiv="refresh" content="2;URL=index.php">
+<hr>
+<a href="index.html">Volver</a>
+</body>
+</html>

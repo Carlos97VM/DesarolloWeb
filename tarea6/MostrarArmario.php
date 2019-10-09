@@ -1,4 +1,10 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="Orange">
+	<?php
   include('estante.php');
   session_start();
 if (!isset($_SESSION['e']))
@@ -10,4 +16,7 @@ if (!isset($_SESSION['e']))
  	 $_SESSION['e']->mostrar();
   }
 ?>
-<meta http-equiv="refresh" content="5;URL=index.php">
+<hr>
+<a href="index.html">Volver</a>
+</body>
+</html>

@@ -89,7 +89,7 @@
 				case '1':
 			?>
 					<p align="center"><strong>Libros de La fila 1 </p>
-        			<table width="118" border="1" >
+        			<table width="118" border="1" align="center">
         				<tr>
         					<td><strong>Libro</strong></td>
         				</tr>
@@ -107,7 +107,7 @@
 				case '2':
 			?>
 					<p align="center"><strong>Libros de La fila 2 </p>
-        			<table width="118" border="1" >
+        			<table width="118" border="1" align="center">
         				<tr>
         					<td><strong>Libro</strong></td>
         				</tr>
@@ -125,7 +125,7 @@
 					case '3':
 			?>
 					<p align="center"><strong>Libros de La fila 2 </p>
-        			<table width="118" border="1" >
+        			<table width="118" border="1" align="center">
         				<tr>
         					<td><strong>Libro</strong></td>
         				</tr>
@@ -150,20 +150,40 @@
 		{
 		
 			echo"<center><h1>Libros de Armario</h1></center>";
-			echo"<br><b>Fila1</b><br>";
+			?>
+			<center>
+				<table width="118" border="2" cellspacing="10">
+				<tr><th>Fila 1</th>
+					<th>Fila 2</th>
+					<th>Fila3</th>
+				</tr>
+				<tr>
+					<td>
+				<?php		echo"<br><b>Fila1</b><br>";
         	 	for ($i=1;$i<=$this->tope1;$i++) 
         	 	{ 
         	 		echo  $this->fila1[$i]."<br>";
-        	 	}
-        	echo"<br><b>Fila2</b><br>";
+        	 	}?>
+					</td>
+					<td>
+						<?php echo"<br><b>Fila2</b><br>";
         	 	for ($i=1;$i<=$this->tope2;$i++) 
         	 	{ 
         	 		echo  $this->fila2[$i]."<br>";
-        	 	}
+        	 	}?>
+					</td>
+					<td>
+						<?php
+        	
         	echo"<br><b>Fila3</b><br>";
         	 	for ($i=1;$i<=$this->tope3;$i++) 
         	 	{ 
         	 		echo  $this->fila3[$i]."<br>";
-        	 	} 	
+        	 	}?>
+					</td>
+				</tr>
+			</table>
+			</center>
+			<?php
 		}
 	} ?>

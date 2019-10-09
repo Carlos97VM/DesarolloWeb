@@ -5,15 +5,21 @@
 </head>
 <body>
 	<?php 
-		$n = $_POST['txtn'];
-		for ($i = 1 ; $i <= $n ; $i++){
+	$n=$_POST['txtn'];
 	?>
-		<form action="suma.php" method="POST">
-			<label for="Datos">Numero <?php echo $i; ?> </label>
-		<input type="text" name="Datos"><br>
-	<?php }
-	 ?>
-	 <input type="submit" name="enviar">
-	 </form>
+	<form action="suma.php" method="POST">
+	<?php 
+	for ($i=0; $i < $n; $i++) { 
+	?>
+
+	<input type="text" name="n<?php echo $i?>"><br/>
+
+	<?php
+ 	} 
+	?>
+	<input type="hidden" name="txtn" value="<?php echo $n ?>">
+	<input type="submit" value="sumar">
+
+</form>
 </body>
 </html>

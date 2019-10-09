@@ -5,13 +5,13 @@
   <title>INSERTAR</title>
 </head>
 
-<body>
+<body bgcolor="Orange">
 <form id="form1" name="form1" method="post" action="eliminar.php">
   <br>
-  <center><h1>Eliminar elemento en el estanteLibro Por seleccion de Fila Fila</h1></center>
+  <center><h1>Eliminar elemento en el estante del Librero</h1></center>
   <br>
   <p>
-    <label>Inserte fila:
+    <label>Fila a eliminar: 
     <input name="txtFila" type="text" />
   </p>
   <p>
