@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .rojo{
     background: red;
     height: 50px;
@@ -12,4 +13,20 @@
 	background: green;
 	height: 50px;
 	width: 200px;
+=======
+.rojo{
+    background: red;
+    height: 50px;
+    width: 200px;
+}
+.amarillo{
+    background: yellow;
+        height: 50px;
+        width: 200px;
+}
+.verde{
+	background: green;
+	height: 50px;
+	width: 200px;
+>>>>>>> e379333900b81d9ac65419e8b2a42a598cb0f276
 }
