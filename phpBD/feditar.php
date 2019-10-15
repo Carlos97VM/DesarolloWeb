@@ -5,7 +5,12 @@
 	<title>Document</title>
 </head>
 <body>
-	<?php include ("conexion.php");
+<?php session_start();
+if (isset($_SESSION['correo']))
+{
+if ($_SESSION['nivel']==1)
+{	
+include ("conexion.php");
 	$id=$_GET['txtId'];
 $sql="SELECT id,nombres,apellidos,cu,ci from alumnos where id=$id";
 //echo $sql;
@@ -26,6 +31,20 @@ $fila=$resultado->fetch_assoc();
 		<input type="submit">
 		<form>
 	</form>
+<?php 
+ }
+ else
+ {
+ 	echo 'usted no tiene permiso para hacer esta accion ';
+ }
+}
+
+else 
+{
+	echo 'acceso denegado ingrese a <a href="flogin.html"> este enlace para entrar</a>';
+}
+
+ ?>
 	
 </body>
 </html>
