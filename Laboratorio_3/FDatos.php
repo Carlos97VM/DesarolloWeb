@@ -5,7 +5,7 @@
 </head>
 <body>
 	<center>
-		<form action="insertar.php">
+		<form action="insertar.php" method="POST">
 			<label for="NAlumnos">Introdusca Numero de Alumnos</label>
 			<input type="number" name="NAlumnos">
 			<br>
