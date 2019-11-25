@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1</title>
+	<script>
+		function PintarRojo(){
+			var espacio = document.getElementById("Campo").innerHTML = document.write("ROJO")
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<input type="button" value="ROJO" id="ROJO" onclick="PintarRojo()"><br><br>
+
+		<input type="button" value="AMARILLO" id="AMARILLO" onclick="Pintar()"><br><br>
+
+		<input type="button" value="VERDE" id="VERDE" onclick="Pintar()"><br><br>
+
+		<input type="radio" value="Fondo" name="pintar">Fondo
+		<input type="radio" value="Primer Plano" name="pintar">Primero Plano
+	</center>
+	<div id="Campo"></div>
+</body>
+</html>
