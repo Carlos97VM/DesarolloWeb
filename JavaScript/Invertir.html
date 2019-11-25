@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Invertir Cadena</title>
+	<script>
+		function Invertir(){
+			var cad = document.getElementById("cadena").value;
+			console.log(cad);
+			var inv="";
+			for (var i = 0; i < cad.length; i++){
+				inv = cad[i] + inv;
+				}
+			document.getElementById("resultado").innerHTML=inv;
+		}
+	</script>
+</head>
+<body>
+	Introducir Cadena:
+	<input type="text" id="cadena"><br>
+	<input type="button" value="invertir" onclick="Invertir()"><br>
+	<div id="resultado"></div>
+</body>
+</html>

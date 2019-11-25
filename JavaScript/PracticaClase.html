@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica de Clase</title>
+	<script>
+		function Calcular(){
+			var first = parseInt(document.getElementById("uno").value);
+			var second = parseInt(document.getElementById("dos").value);
+			var theerth = parseInt(document.getElementById("tres").value);
+			console.log(first);
+			console.log(second);
+			console.log(theerth);
+			if (first>second && first>theerth) {
+				document.getElementById("uno").style.backgroundColor="blue";
+				document.getElementById("uno").style.color="white";
+			}
+			if(second>first && second>theerth){
+				document.getElementById("dos").style.backgroundColor="blue";
+				document.getElementById("dos").style.color="white";
+			}
+			if(theerth>first && theerth>second){
+				document.getElementById("tres").style.backgroundColor="blue";
+				document.getElementById("tres").style.color="white";
+			}
+			if (first<second && first<theerth) {
+				document.getElementById("uno").style.backgroundColor="green";
+				document.getElementById("uno").style.color="white";
+			}
+			if(second<first && second<theerth){
+				document.getElementById("dos").style.backgroundColor="green";
+				document.getElementById("dos").style.color="white";
+			}
+			if(theerth<first && theerth<second){
+				document.getElementById("tres").style.backgroundColor="green";
+				document.getElementById("tres").style.color="white";
+			}
+			s="<select><option>"+a+"</option>";
+			s=s+"<option>"+b+"</option>";
+			s=s+"<option>"+c+"</option></select>";
+
+		}
+		function Limpiar(){
+			uno=document.getElementById("uno");
+			uno.value="";
+			uno.style.color="black";
+			uno.style.backgroundColor="white";
+			dos=document.getElementById("dos");
+			dos.value="";
+			dos.style.color="black";
+			dos.style.backgroundColor="white";
+			tres=document.getElementById("tres");
+			tres.value="";
+			tres.style.color="black";
+			tres.style.backgroundColor="white";
+		}
+	</script>
+</head>
+<body>
+	Practica de Clase <br>
+	<input type="text" id="uno"><br>
+	<input type="text" id="dos"><br>
+	<input type="text" id="tres"><br>
+	<input type="button" value="Calcular" onclick="Calcular()"><input type="button" value="Limpiar" onclick="Limpiar()"><br>
+	<div id="select"></div>
+</body>
+</html>

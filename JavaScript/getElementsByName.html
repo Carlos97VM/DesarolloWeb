@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Segundo Grado</title>
+	<script>
+		//Usar ctrl + shift + r para refrescar sin el cache
+		function Calcular(){
+			a=parseInt(document.getElementsById("a").value="a");
+			b=parseInt(document.getElementsById("a").value="b");
+			c=parseInt(document.getElementsById("a").value="c");
+
+			x1=(-b+Math.sqrt(b*b-4*a*c))/2*a;
+			x2=(-b-Math.sqrt(b*b-4*a*c))/2*a;
+			document.getElementsById("x1").value=x1;
+			document.getElementsById("x2").value=x2;
+		}
+	</script>
+</head>
+<body>
+	<label for="a">A</label><input type="numero" id="a" name="a"><br>
+	<label for="b">B</label><input type="numero" id="b" name="b"><br>
+	<label for="c">C</label><input type="numero" id="c" name="c"><br>
+	<input type="button" value="Calcular" onclick="Calcular()"><br>
+	<label for="x1">X1</label><input type="text" readonly="true" id="x1" name="x1"><br>
+	<label for="x2">X2</label><input type="text" readonly="true" id="x2" name="x2"><br>
+</body>
+</html>
