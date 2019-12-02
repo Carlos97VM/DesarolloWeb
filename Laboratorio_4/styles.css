@@ -1,0 +1,94 @@
+body{
+	
+	margin: 0 auto;
+}
+#contenedor{
+	width: 300px;
+	margin: auto;
+	height: 40px;
+	text-align: left;
+}
+#contenido{
+	width: 900px;
+	height: 500px;
+	border: 1px solid black;
+	margin : auto;
+	text-align: center;
+}
+#center{
+	width: 300px;
+	height: 50px;
+	margin: auto;
+	margin-top: 30px;
+	border: 1px;
+	text-align: center;
+}
+
+ul.menu {
+clear: both;
+float: left;
+width: 400px;
+list-style: none;
+margin: 0;
+padding: 0;
+border-left:1px solid #7C7C7C;
+}
+ul.menu li {
+display: inline;
+float: left;
+}
+ul.menu li a:link, ul.menu li a:visited {
+padding: .3em;
+display: block;
+text-decoration: none;
+color: #333;
+background: #F4F4F4;
+border-top:1px solid #7C7C7C;
+border-right:1px solid #7C7C7C;
+border-bottom:1px solid #9C9C9C;
+}
+ul.menu li a:hover{
+	background-color: #FC0;
+}
+input#check {
+	position: absolute;
+	opacity: 0;
+	
+	&:checked + label svg path {
+		stroke-dashoffset: 0;
+	}
+	
+	&:focus + label {
+		transform: scale(1.03);
+	}
+}
+
+#check + label {
+	display: block;
+	border: 13px solid #333;
+	width: var(--d); height: var(--d);
+	border-radius: 14px;
+	cursor: pointer;
+	transition: all .2s ease;
+	
+	&:active {
+		transform: scale(1.05);
+		border-radius: 30px;
+	}
+	
+	svg {
+		pointer-events: none;
+		path {			
+			fill: none;			
+			stroke: #333;
+			stroke-width: 4px;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-dasharray: 100;
+			stroke-dashoffset: 101;
+			transition: all 350ms cubic-bezier(1,0,.37,.91);
+		}
+	}
+}
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Laboratorio AJAX</title>
+	<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+	<h2>Nuevo Mensaje</h2>
+	<form class="form-group text-center h6" action="javascript:enviar()">
+		<div class="form-group row">
+			<label for="txtDestinario" class="col-sm-2 col-form-label">Destinario</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="destinario" placeholder="example@gmail.com">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="txtAsunto" class="col-sm-2 col-form-label">Asunto</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="asunto" placeholder="Asunto....">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="mensaje" class="col-sm-2 col-form-label">mensaje</label>
+			<div class="col-sm-7">
+				<textarea class="form-control" id="mensaje" rows="3"
+				placeholder="Mensaje...."></textarea>
+			</div>
+		</div>
+		<input type="submit" class="btn btn-primary" value="Enviar">
+	</form>
+</body>
+</html>
