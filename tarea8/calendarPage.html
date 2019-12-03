@@ -1,0 +1,22 @@
+<!--- calendarPage.html --->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<SCRIPT LANGUAGE="JavaScript" SRC="calendar.js"></SCRIPT>
+	<title>Calendar Page</title>
+</head>
+
+<body>
+
+<form name="myForm">
+
+<input type="text" name="myDateField"><br>
+<a href="javascript:doNothing()" onClick="setDateField(document.myForm.myDateField);top.newWin=window.open('calendar.html','cal','dependent=yes,width=210,height=230,screenX=200,screenY=300,titlebar=yes')"> <img src="calendar.gif" border=0>Click Aqui</a>
+<div id="resultado"></div>
+
+</form>
+
+</body>
+</html>
