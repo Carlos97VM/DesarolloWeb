@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Laboratorio 4 de AJAX</title>
+</head>
+<body>
+	<center>
+		<h3>Laboratorio 4 de AJAX</h3>
+		<hr>
+		<div id="contenido" style="background-color: yellow;width: 400px">
+			Esperando Accion
+		</div>
+		<input type="button" value="Pregunta #1" onclick="llamar('pregunta1.html')">
+		<input type="button" value="Pregunta #2" onclick="llamar2('pregunta2.html')"><br>
+		<div id="pregunta2" style="background-color: orange;width: 400px">   </div><br>
+		<div id="resultado" style="background-color: orange;width: 400px">   </div>
+	</center>
+<script>
+	function llamar($direccion)
+	{
+		ajax=new XMLHttpRequest();
+		ajax.onreadystatechange=function()
+		{
+		 if(ajax.readyState == 4) { 
+		 	if(ajax.status == 200) { 
+		 	 document.getElementById('contenido').innerHTML=ajax.responseText;
+		 	}
+		 	}	
+		} 
+		ajax.open('GET', $direccion, true); 
+		ajax.send(); 
+	}
+	function llamar2($direccion)
+	{
+		ajax=new XMLHttpRequest();
+		ajax.onreadystatechange=function()
+		{
+		 if(ajax.readyState == 4) { 
+		 	if(ajax.status == 200) { 
+		 	 document.getElementById('pregunta2').innerHTML=ajax.responseText;
+		 	}
+		 	}	
+		} 
+		ajax.open('GET', $direccion, true); 
+		ajax.send(); 
+	}
+	function llamarGET()
+	{
+		ajax=new XMLHttpRequest();
+		ajax.onreadystatechange=function()
+		{
+		 if(ajax.readyState == 4) { 
+		 	if(ajax.status == 200) { 
+		 	 document.getElementById('contenido').innerHTML=ajax.responseText;
+		 	}
+		 	}	
+		} 
+		cadena="txtNombres="    +encodeURIComponent(document.getElementById("txtNombres").value)+"&";
+		cadena+="txtApellidos=" +encodeURIComponent(document.getElementById("txtApellidos").value)+"&";
+		cadena+="txtCorreo="    +encodeURIComponent(document.getElementById("txtCorreo").value)+"&";
+		cadena+="txtPassword="  +encodeURIComponent(document.getElementById("txtPassword").value);
+		
+		cadena+="&nocache=" + Math.random();
+		console.log(cadena)
+		ajax.open('GET', 'insertarGET.php?'+cadena, true); 
+		ajax.send(); 
+	}
+	function color()
+	{
+		var res = parseInt(document.getElementById("txtNumero").value);
+		document.getElementById("resultado").style.backgroundColor="yellow";
+		document.getElementById("resultado").innerHTML=res;
+	}
+</script>
+
+</body>
+</html>
