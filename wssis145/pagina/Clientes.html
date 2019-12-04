@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <script src="./libs/jquery-3.4.1.js" type="text/javascript"></script>
+  <script src="./app.js" type="text/javascript"></script>
+  <style>
+    #tabla_clientes tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    #tabla_clientes th,
+    #tabla_clientes td {
+      border-bottom: 1px solid #ddd;
+    }
+    body {
+      max-width: 75%;
+      box-shadow: 0px 0px 10px black;
+      padding: 15px;
+      margin: 16px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Distribuidora</h1>
+  <h2>Lista De Clientes</h2>
+  <table id="tabla_clientes">
+  </table>
+  <h2>Agregar Cliente</h2>
+  <table>
+    <tr>
+      <td>Id Persona: </td>
+      <td><input type="text" id="id_persona" value="" /></td>
+    </tr>
+    <tr>
+      <td>Fecha de registro: </td>
+      <td><input type="date" id="fecha_registro" value="" /></td>
+    </tr>
+
+  </table>
+  <button onclick="guardarCliente()">Guardar</button>
+</body>
+
+</html>

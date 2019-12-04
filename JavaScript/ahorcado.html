@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ahorcado</title>
+	<script>
+		var palabra = "PROFESOR";
+		var intentos = 7;
+		var correctos = 0;
+		function comprobar(){
+			l1=document.getElementById("l1");
+			if(l1.value.length>0){
+				if(l1.value.toUpperCase() == palabra[0]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l2=document.getElementById("l2");
+			if(l2.value.length>0){
+				if(l2.value.toUpperCase() == palabra[1]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l3=document.getElementById("l3");
+			if(l3.value.length>0){
+				if(l3.value.toUpperCase() == palabra[2]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l4=document.getElementById("l4");
+			if(l4.value.length>0){
+				if(l4.value.toUpperCase() == palabra[3]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l5=document.getElementById("l5");
+			if(l5.value.length>0){
+				if(l5.value.toUpperCase() == palabra[4]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l6=document.getElementById("l6");
+			if(l6.value.length>0){
+				if(l6.value.toUpperCase() == palabra[5]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l7=document.getElementById("l7");
+			if(l7.value.length>0){
+				if(l7.value.toUpperCase() == palabra[6]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+			l8=document.getElementById("l8");
+			if(l8.value.length>0){
+				if(l8.value.toUpperCase() == palabra[7]){
+					correctos++;
+					document.getElementById("txtmensaje").value="Letra Correcta";
+				}
+				else{
+					document.getElementById("txtmensaje").value="Letra Incorrecta";
+					intentos--;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<br><hr>
+	<center>Palabra</center>
+	<hr>
+	<center>
+	<input type="text" id="l1" size="2" maxlength="1">
+	<input type="text" id="l2" size="2" maxlength="1">
+	<input type="text" id="l3" size="2" maxlength="1">
+	<input type="text" id="l4" size="2" maxlength="1">
+	<input type="text" id="l5" size="2" maxlength="1">
+	<input type="text" id="l6" size="2" maxlength="1">
+	<input type="text" id="l7" size="2" maxlength="1" >
+	<input type="text" id="l8" size="2" maxlength="1">
+	</center><br>
+	<input type="text" id="txtmensaje"><br>
+	<input type="button" value="confirmar" onclick="comprobar()">
+</body>
+</html>

@@ -1,0 +1,4 @@
+JQuery => libreria de javascript.
+  https://jquery.com/
+
+Herramientas de desarrollador en chrome: F12

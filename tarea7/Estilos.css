@@ -1,0 +1,239 @@
+BODY
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    background-color : #F6F6F6;
+    color: #3E3E3E;
+}
+
+H1 {
+	color : #990000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size : 200%;
+	margin-bottom : -1em;
+	margin-left : -5%;
+}
+
+H2 {
+	color : #990000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size : 160%;
+    margin-left:5px;	
+}
+
+H3 {	
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size : 140%;	
+	margin-top : 2em;
+}
+
+H4 {	
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size : 115%;
+	margin-left : -5%;
+	margin-top : 1.5em;
+}
+
+H5 {
+	color : #990000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size : 100%;
+	font-weight : 900
+	
+}
+
+H6{
+	color : #000000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+B, TD
+{    
+    font-size : 11px;    
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+table
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    border:1px #C6C6C6 solid;
+    color: #3E3E3E;
+    background-color : #F0F0F0;    
+}
+
+.Button
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;    
+    color:#000000;    
+    border:1px solid #000000;
+    cursor:pointer;
+    height: 20px;
+    background : url(boton.png) -20px 0px;
+}
+
+.button_key
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;    
+    color:#000000;
+    border:1px solid #7F9DB9;
+    cursor:pointer;
+    background : url(boton.png) 0 20px;
+    height: 20px;
+    width:20px;
+}
+
+.image
+{    
+    cursor:pointer;
+    border: 0;
+}
+
+.cabezera
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size:10px;    
+    color: white;
+    background-color : #1C5280;    
+}
+
+a:hover {
+    color: #1C5280;
+}
+
+a:link, a:visited
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    color: #FFFFFF;
+    text-decoration : none;
+}
+
+.caja_texto{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 9px;    
+    color: #3E3E3E;
+    height: 20px;
+    border:1px #C6C6C6 solid;
+    text-transform:uppercase;
+    background:#FAFAF0;
+}
+
+.caja_texto_moneda{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    text-align: right;
+    color: #3E3E3E;
+    height: 20px;
+    border:1px #C6C6C6 solid;
+    text-transform:uppercase;
+    background:#FAFAF0;
+}
+
+.caja_secure{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #3E3E3E;
+    height: 20px;
+    border:1px #C6C6C6 solid;
+    background:#FAFAF0;
+}
+
+.text_area{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;     
+    color: #3E3E3E;
+    text-transform:uppercase;
+}
+
+.file { 
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    background-color:#E5E5E5;
+    color:#666678;
+    border:1px solid #767676;    
+    height: 22px;
+    width : 450px;
+}
+
+.cabezera_informe{   
+   border-bottom: 1px #C6C6C6 solid;
+   font-family: Verdana,Arial,Helvetica,sans-serif;
+   font-size: 9px;   
+   color: #27537A;
+   background : url(menu3.gif) 0 -32px;   
+}
+
+.detalle_informe{   
+   font-family: Verdana,Arial,Helvetica,sans-serif;
+   font-size: 10px;
+   color:#3E3E3E;  
+   border-bottom: 1px #C6C6C6 solid;
+}
+
+.titulo{   
+   border-bottom:1px #C6C6C6 solid;
+   font-size:18px;
+   font-family: Verdana,Arial,Helvetica,sans-serif;
+   color : #192839;
+}
+
+.fecha_hora{
+   border-bottom:1px #C6C6C6 solid;
+   font-size:11px;
+   font-family: Verdana,Arial,Helvetica,sans-serif;
+   color : #192839;
+}
+
+.menu_cab{
+   font-family: Verdana,Arial,Helvetica,sans-serif;
+   font-size: 9px;
+   color: #D0D0D0;
+   background : #192839;
+}
+
+.menu_det{
+   font: normal 10px Verdana,Arial,Helvetica,sans-serif;
+   color: #D0D0D0;
+   background : #1C5280;
+   line-height: 15px;
+   padding-left: 10px;
+   text-decoration: none;
+   border-bottom:1px #192839 solid;
+   text-align:left;
+   cursor:pointer;
+}
+
+.menu_det a{
+   color: #D0D0D0;
+   cursor: pointer;
+}
+
+#div_contenido{
+    float:none;
+    clear:both;
+}
+
+#div_left{
+    margin:0px;
+    background-color:#1C5280;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    text-align:left;
+    float:left;
+    width:180px;
+}
+
+#div_right{
+    margin-left:5px;
+    padding-bottom:10px;
+    padding-left:5px;
+    background-color:#F0F0F0;
+    float:left;
+}
+
+#div_imprime{    
+    padding-top:10px;    
+    background-color:#F0F0F0;
+    float:left;
+}

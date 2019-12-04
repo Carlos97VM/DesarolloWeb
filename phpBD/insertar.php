@@ -7,6 +7,8 @@ if (isset($_SESSION['correo']))
 	$Ape=$_POST['txtApellidos'];
 	$Ci=$_POST['txtCI'];
 	$Cu=$_POST['txtCU'];
+	$ID_carrera=$_POST['sCarrera'];
+	$nombreTemporal=$_FILES['imgFotografia']['tmp name']
 	$sql="insert into alumnos(nombres,apellidos,cu,ci) values ('$Nom','$Ape','$Cu','$Ci')";
 	$resultado=$con->query($sql);
 }

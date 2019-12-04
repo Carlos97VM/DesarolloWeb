@@ -1,0 +1,30 @@
+<?php 
+	include "Coneccion.php"
+	$Pais=$_POST['Pais'];
+	$NroDep=$_POST['NroDep'];
+	$Departamento=$_POST['Departamento'];
+	$Provincia=$_POST['Provincia'];
+	$NroMunucipio=$_POST['NroMunucipio'];
+	$Municipio=$_POST['Municipio'];
+	$Circunscripcion=$_POST['Circunscripcion'];
+	$Localidad=$_POST['Localidad'];
+	$Recinto=$_POST['Recinto'];
+	$NroMesa=$_POST['NroMesa'];
+	$CodMesa=$_POST['CodMesa'];
+	$Eleccion=$_POST['Eleccion'];
+	$Inscritos=$_POST['Inscritos'];
+	$CC=$_POST['CC'];
+	$FPV=$_POST['FPV'];
+	$MTS=$_POST['MTS'];
+	$UCS=$_POST['UCS'];
+	$MAS=$_POST['MAS'];
+	$21F=$_POST['21F']
+	$PDC=$_POST['PDC'];
+	$MNR=$_POST['MNR'];
+	$Pan=$_POST['PAN'];
+	$Validos=$_POST['Validos'];
+	$Blancos=$_POST['Blancos'];
+	$Nulos=$_POST['Nulos'];
+	$sql="insert into mytable(Pais,NroDep,Departamento,Provincia,NroMunucipio,Municipio,Circunscripcion,Localidad,Recinto,NroMesa,CodMesa,Eleccion,Inscritos,CC,FPV,MTS,UCS,MAS,21F,PDC,MNR,PAN,Validos,Blancos,Nulos) values ('$Pais','$NroDep','$Departamento','$Provincia','$NroMunucipio','Municipio','Circunscripcion','Localidad','Recinto','NroMesa','CodMesa','Eleccion','Inscritos','CC','FPV','MTS','UCS','MAS','21F','PDC','MNR','PAN','Validos','Blancos','Nulos')";
+	$resultado=$con->query($sql);
+?>

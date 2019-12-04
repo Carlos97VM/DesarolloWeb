@@ -1,0 +1,254 @@
+*{	
+	margin: 0;
+	border:0;
+}
+body{
+	background-image: url(../img/paisaje1.jpg);
+	margin: 0;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+}
+h1{
+	height: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	text-align: center;
+	text-shadow: 0px 6px 7px black; 
+	font:40px solid black;
+	font-family: Lucida Calligraphy;
+}
+h2{
+	text-align: center;
+	text-shadow: 0px 6px 7px black; 
+	font:30px solid black;
+	font-family: Lucida Calligraphy;	
+}
+
+#Up {
+	width: 100%;
+	height: 100%; 
+	height: 140px;
+	margin-bottom: 10px;
+	background-color: #209cc6;
+}
+.blanco{
+	color: white;
+
+}
+#Cuerpo{
+	width: 100%;
+	height:100%;
+	height: 300%;
+	background-color: #20c2c6;
+}
+#Menu{
+	width: 40%;
+	height:400%;
+	height: 500%;
+	background-color: #20c2c6;
+}
+/*------------------------------------------------------------------*/
+/*Navegacion */
+/*------------------------------------------------------------------*/
+ul.menu {
+	font-size: 25px;
+	clear: both;
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-left:1px solid #7C7C7C;
+	border-radius: 8px;
+}
+ul.menu li {
+	display: inline;
+	height: 20px;
+	float: left;
+	border-radius: 8px;
+}
+ul.menu li a:link, ul.menu li a:visited {
+	border-radius: 8px;
+	padding: .3em;
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #4A4747;
+	border-top:1px solid #7C7C7C;
+	border-right:1px solid #7C7C7C;
+	border-bottom:1px solid #9C9C9C;
+	text-transform: uppercase;
+	border:2px solid #0F7970;
+}
+ul.menu li a:hover{
+	background-color: #04B36F;
+}
+/*------------------------------------------------------------------*/
+/* Cajas*/
+/*------------------------------------------------------------------*/
+.centrado{
+	float: center;
+	text-align: center;
+	padding: 10px;
+	border-top: 5px solid black;
+	margin: 0 auto;	
+}
+#contenedor {
+	width: 800px;
+	margin:0 auto;
+}
+#Top {
+	width: 800px;
+	height: 250px;
+	text-align: center;
+	margin:0 auto;
+}
+.Left {
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+
+.Right {
+	width:400px;
+	height: 300px;
+	float: left;	
+}
+img{
+	margin-left: 7px;
+	margin-right: 12px;
+	margin-bottom: 7px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+/*------------------------------------------------------------------*/
+/* Tablas */
+/*------------------------------------------------------------------*/
+table{
+	border:1px solid #000;
+	border-collapse:collapse; 
+	margin: 0 auto;
+	font-size: 22px;
+	color: white;
+}
+table td{
+	border:1px solid #000;
+}
+table tr:hover{
+	background: #085372;
+}
+.cuerpo{
+	border-top: 3px solid black;
+	padding: 10px 15px 15px 15px;
+	font-size: 20px;
+	background: rgba(0,0,0,0.4);
+	clear: both;
+	text-align: center;
+}
+/*------------------------------------------------------------------*/
+/* Boton */
+/*------------------------------------------------------------------*/
+	.button{
+		display: inline-block;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 1000;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: #ccc;
+		color: black;
+		border: 3px solid black;
+		line-height: 1em;
+		border-radius: 8px;
+		outline: 0;
+		cursor: pointer;
+		font-size: 1em;
+		padding: 1em 1em;
+		text-align: center;
+		margin: 10px 0px 0px 10px;
+		float: center;
+	}
+	a.button {	
+		display: inline-block;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 1000;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: #ccc;
+		color: black;
+		border: 3px solid black;
+		line-height: 1em;
+		border-radius: 8px;
+		outline: 0;
+		cursor: pointer;
+		font-size: 1em;
+		padding: 1em 1em;
+		text-align: center;
+		margin: 10px 0px 0px 10px;
+		float: left;
+	}
+	.button:hover{
+		background: #10ACD9;
+	}
+/*------------------------------------------------------------------*/
+	/* Pie de Pagina */
+/*------------------------------------------------------------------*/
+	#copyright {
+		position: relative;
+		border-top: 3px solid black;
+		margin-top: 40px;
+		margin-left: 300px;
+		display: inline-block;
+		background: rgba(0,54,50,0.4);
+		padding: 0.75em 2em 2em 2em;
+		border-radius: 8px;
+		color: white;
+	}
+
+		#copyright .menu {
+			margin: 0 auto;
+		}
+
+			#copyright .menu li {
+				border-color: #C1CAC5;
+				border-width: 2px;
+				line-height: 1em;
+			}
+	#copyright:hover{
+		background: #0CA0B1;
+	}
+/*------------------------------------------------------------------*/
+/*trabajando con listas*/
+/*------------------------------------------------------------------*/
+	.list{
+		list-style: none;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 18px;
+	}
+/*------------------------------------------------------------------*/
+/*Formularios*/
+/*------------------------------------------------------------------*/
+form{
+	width: 450px;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 20px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 15px;
+
+}
+input, textarea{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border:none;
+	border-radius: 5px;
+}
+textarea{
+	min-height: 100px;
+	max-height: 150px;
+	max-width: 100%;
+}
