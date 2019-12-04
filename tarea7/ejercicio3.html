@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,4 +44,51 @@
 	}
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3</title>
+</head>	
+<body>
+	<center>
+			<div class="contenedor">
+			<form>
+				<label for="txtUser">Usuario</label><br>
+				<input type="text" name="txtUser" id="user"><br>
+				<label for="txtPassword">Contraseña</label><br>
+				<input type="password" name="txtPassword" id="pass"><br><br>
+			</form>
+		</div>
+<div>
+			<table>
+				<tr>
+					<td><input onclick="teclado(this.value)" type="button" value="1"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="2"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="3"></td>
+				</tr>
+				<tr>
+					<td><input onclick="teclado(this.value)" type="button" value="4"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="5"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="6"></td>
+				</tr>
+				<tr>
+					<td><input onclick="teclado(this.value)" type="button" value="7"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="8"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="9"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input onclick="teclado(this.value)" type="button" value="0"></td>
+				</tr>
+			</table>
+		</div>
+	</center>
+<script>
+	function teclado(x){
+		var pass =document.getElementById("pass");
+		pass.value+=x;
+	}
+</script>
+</body>
+>>>>>>> 5fd5fee305339c809bbeb76e23d04e98807669a4
 </html>
